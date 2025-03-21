@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--END BOOTSTRAP-->
+    <!--BOOTSTRAP ICONOS RRSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!--FIN DE BOOTSTRAP ICONOS-->
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--FONTS End-->
+    <!--CSS-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- CSS End-->
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-header d-flex justify-content-between p-3">
+            <div class="left-top-header">
+                <p class="m-0">Argentina</p>
+            </div>
+            <div class="right-top-header">
+                <p class="m-0">Atención al cliente</p>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img src="../assets/resources/logos/logowhite2.svg"
+                            alt="Logo" class="logo-img"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/tienda.html">Tienda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/planes.html">Planes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--Fin del menú de navegación-->
+    </header>
+    <main>
+        <h1>Contactate con nosotros</h1>
+        <div class="contacto">
+            <img src="../assets/resources/persona-telefono-contacto-hablar.avif" class="img-contacto" alt="Contactate con">
+            <section id="formulario-contacto">
+                <p>Ponete en contacto con nosotros completando el siguiente formulario:</p>
+                <form action="/submit" method="post">
+                    <div class="mb-3">
+                        <label for="numero_cliente" class="form-label">Número de cliente</label>
+                        <input type="text" class="form-control" name="numero_cliente" id="numero_cliente">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" name="nombre" id="nombre">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" name="apellido" id="apellido">
+                        <label for="motivo_contacto">Motivo del contacto:</label>
+                        <select class="form-select" aria-label="Motivos de contacto">
+                            <option value="consulta" selected>Consulta</option>
+                            <option value="reclamo">Reclamo</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email"
+                            placeholder="ejemplo@fiberf1rst.com.ar">
+                        <label for="mensaje" class="form-label">Mensaje</label>.
+                        <textarea class="form-control" name="mensaje" id="mensaje" rows="3"></textarea>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="servicio_contratado" id="compra_online"
+                                checked>
+                            <label class="form-check-label" for="compra_online">
+                                Compra Online
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="servicio_contratado" id="plan_celular">
+                            <label class="form-check-label" for="plan_celular">
+                                Plan celular
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="servicio_contratado" id="internet_hogar">
+                            <label class="form-check-label" for="internet_hogar">
+                                Internet en tu casa
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn-custom" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <!--Fin del formulario-->
+    </main>
+    <!--Inicio footer (pie de página)-->
+    <footer>
+        <div class="top-footer">
+            <p>©2025 Fiberfirst</p>
+            <div>
+                <a href="https://www.facebook.com" class="text-light mx-2"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com" class="text-light mx-2"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.x.com" class="text-light mx-2"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.tiktok.com" class="text-light mx-2"><i class="bi bi-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!--Fin de footer o pie de página-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

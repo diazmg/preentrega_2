@@ -1,0 +1,430 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Reset End */
+/* MEDIA QUERIES */
+/* Celulares */
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .img-contacto {
+        width: 100%;
+        height: auto;
+    }
+    .navbar .container-fluid {
+        padding: 0 10px:
+    }
+    .navbar-brand img {
+        width: 100px;
+    }
+
+    .grid-equipos {
+        grid-template-columns: 1fr;
+    }
+    .visualizador-content {
+        grid-template-columns: 1fr;
+    }
+    .content-box{
+        width: 100%;
+    }
+
+    .top-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Tablets */
+@media (min-width: 577px) and (max-width: 992px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .grid-equipos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .visualizador-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Escritorio */
+@media (min-width: 993px) {
+    .grid-equipos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .visualizador-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* ESTILOS HEADER*/
+/*TOP-HEADER*/
+.top-header {
+    display: flex;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ededed;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*LOGO Y NAVBAR TOP*/
+.logo-img {
+    width: 150px;
+    height: auto;
+    max-width: 100%;
+}
+
+.bottom-header {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #381451;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: white !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+    /* Color del borde */
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+    /* Invierte los colores (oscuro a claro) */
+}
+
+/*INICIO ESTILOS TOP MENU*/
+
+/*FIN ESTILOS TOP MENU*/
+/* FIN ESTILOS HEADER*/
+/* Estilos Body */
+body {
+    background-color: #F2F2F2;
+}
+
+/* INICIO selector para H1 en todas las webs */
+h1 {
+    font-size: 36px;
+    color: #5c2971;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+}
+
+/* FIN selector para etiqueta H1 en todas las webs */
+/*ESTILOS CAROUSEL*/
+.carousel-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+/* INICIO selector para PÁRRAFOS */
+
+.top-header p {
+    font-family: "Roboto", sans-serif;
+    color: #7e7e7e;
+    font-size: 20px;
+}
+
+/* FIN Selector para PÁRRAFOS en todas las webs */
+
+/*INICIO ESTILOS MAIN*/
+/*PÁRRAFOS dentro del MAIN*/
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 1200px;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+main p {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #a3a3a3;
+}
+
+/*FIN Selector para PÁRRAFOS dentro del MAIN*/
+/*USO DE GRID PARA VISUALIZADOR DE EQUIPOS*/
+#visualizador-equipos {
+    display: grid;
+    grid-template-columns: 250px auto;
+    margin: 5% 0% 5% 0%;
+    column-gap: 1%;
+
+}
+
+.menu-lateral {
+    background-color: #ffffff;
+    border: 1px solid #e7a0f9;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-lateral p {
+    color: #5c2971;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.grid-equipos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*Alternativa: repeat (3, 1fr)*/
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 2%;
+    row-gap: 2%;
+    justify-content: center;
+}
+
+.grid-box {
+    display: grid;
+    place-items: center;
+    background-color: #ffffff;
+    border: 1px solid #e7a0f9;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.grid-box img {
+    width: 50%;
+}
+
+.grid-box p {
+    font-size: 100%;
+    color: #5c2971;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*USO DE GRID PARA VISUALIZADOR DE PLANES*/
+.visualizador-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1%;
+    margin-top: 1%;
+    margin-bottom: 15px;
+}
+
+/*ESTILOS PARA BOX DE PLANES*/
+.content-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    align-items: start;
+    background-color: #381451;
+    border: 2px solid rgb(221, 110, 246);
+    border-radius: 12px;
+}
+
+.content-titulo {
+    padding: 10px 0px 0px 20px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    max-height: 100%;
+}
+
+.content-price {
+    padding-left: 20px;
+    background-color: #e7a0f9;
+}
+
+.content-price p {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.content-box-separador {
+    padding: 10px 0px 0px 20px;
+    background-color: #df4cbf;
+}
+
+.content-box-separador p {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.content-box-info {
+    margin: 20px;
+}
+
+.content-box-info p {
+    color: #fff;
+    font-size: 16px;
+}
+
+
+/*ESTILOS CONTENEDORES SERVICIOS*/
+
+
+/*ESTILOS PARA CONTENEDORES DE EQUIPOS*/
+.eqp-box {
+    background-color: white;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+}
+
+.eqp-box p {
+    font-weight: bold;
+    color: rgb(35, 35, 35);
+    font-size: 25px;
+}
+
+.servicios-celulares {
+    background-color: #5c2971;
+    padding: 5px;
+    color: #ffffff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.servicios-casa {
+    background-color: #5c2971;
+    padding: 5px;
+    color: #ffffff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* SHORTCUTS INDEX */
+#shortcuts {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+#shortcuts div {
+    padding: 10px 2px 2px 2px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #e7a0f9;
+    border-radius: 5px;
+}
+
+#shortcuts p {
+    color: #4d355f;
+    font-size: 15px;
+}
+
+/* FIN ESTILOS MAIN*/
+/* ESTILOS con Especificidad #Etiquetas para IDs */
+
+/*INICIO FOOTER*/
+footer {
+    background-color: #381451;
+    padding: 10px 20px 10px 20px;
+}
+
+footer p {
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*FIN ESTILOS FOOTER*/
+
+/*INICIO ESTILOS ESPECIALES*/
+#banner-servicios {
+    width: 70%;
+}
+
+/*FORMULARIO DE CONTACTO FONDO & TEXTO*/
+.contacto {
+    display: flex;
+    gap: 10px;
+}
+
+#formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #680b97;
+    padding: 2%;
+    margin-bottom: 2%;
+    background-color: #fdf8fe;
+    /*Fondo del menú*/
+    border: 1px solid #ea96ff;
+    border-radius: 5px;
+
+    /*Borde gris*/
+}
+
+#formulario-contacto p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #681e85;
+}
+
+.btn-custom {
+    background-color: #6a0dad;
+    color: white;
+    border: 1px solid #da1aba;
+    border-radius: 2px;
+
+}
+
+.btn-custom:hover {
+    background-color: #580a9e;
+}
+
+
+.titulo2 {
+    margin-top: 10px;
+}
+
+.titulo2 p {
+    color: #8724a5;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.img-contacto {
+    max-width: 100%;
+    height: 50%;
+}
