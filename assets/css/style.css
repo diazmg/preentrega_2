@@ -181,6 +181,10 @@ main p {
   font-size: 20px;
   color: #a3a3a3;
 }
+main img {
+  width: 100%;
+  display: block;
+}
 
 /*INICIO FOOTER*/
 footer {
