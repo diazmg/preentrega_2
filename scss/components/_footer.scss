@@ -1,0 +1,18 @@
+/*INICIO FOOTER*/
+footer {
+    background-image: linear-gradient(45deg,#23132e,#592a7e 50%,#4b2864 80%);
+    padding: 10px 20px 10px 20px;
+}
+
+footer p {
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-between;
+}
+/*FIN ESTILOS FOOTER*/

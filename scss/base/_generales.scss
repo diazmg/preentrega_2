@@ -1,0 +1,100 @@
+@use '../utilities/extends' as e;
+@use '../utilities/mixins' as g;
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* CSS Reset END */
+html {
+    height: 100%;
+}
+/* h1 General Style */
+h1 {
+    @include g.font-style(36px, #5c2971);
+    text-align: left;
+}
+
+/* BODY STYLES */
+body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    background-color: #F2F2F2;
+}
+
+/*INICIO ESTILOS ESPECIALES*/
+#banner-servicios {
+    width: 70%;
+}
+
+/* ESTILOS SHORTCUTS INDEX */
+#shortcuts {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    align-items: stretch;
+    justify-content: space-between;
+    div {
+        padding: 10px 2px 2px 2px;
+        @extend %flex-container;
+        @include g.flex-center(column);
+        @include g.box-style(#e7a0f9);
+    }
+    p {
+        color: #4d355f;
+        font-size: 15px;
+    }
+}
+
+/* FIN ESTILOS SHORTCUTS INDEX */
+
+/*FORMULARIO DE CONTACTO FONDO & TEXTO*/
+.contacto {
+    @extend %flex-container;
+}
+
+#formulario-contacto {
+    @extend %flex-container;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #680b97;
+    padding: 2%;
+    margin-bottom: 2%;
+    background-color: #fdf8fe;
+    @include g.box-style(#ea96ff);
+    p {
+        @include g.font-style(20px, #681e85);
+        font-weight: bold;
+    }
+}
+
+/* BOTON ESPECIFICO WEB CONTACTO */
+.btn-custom {
+    background-color: #6a0dad;
+    color: white;
+    border: 1px solid #da1aba;
+    border-radius: 2px;
+    &:hover {
+        background-color: #580a9e;
+    }
+}
+
+/* BOTON ESPECIFICO WEB CONTACTO */
+.titulo2 {
+    margin-top: 10px;
+    p {
+        color: #8724a5;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+.img-contacto {
+    max-width: 100%;
+    height: 50%;
+}

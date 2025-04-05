@@ -1,0 +1,47 @@
+/* ESTILOS HEADER*/
+/*TOP-HEADER*/
+.top-header {
+    display: flex;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ededed;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        font-family: "Roboto", sans-serif;
+        color: #7e7e7e;
+        font-size: 20px;
+    }
+}
+
+/*LOGO Y NAVBAR TOP*/
+.logo-img {
+    width: 150px;
+    height: auto;
+    max-width: 100%;
+}
+
+.bottom-header {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: linear-gradient(65deg,#260e36,#5a2184 25%,#8130bb 80%);
+    /*background-color: #381451;*/
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    text-align: center;
+    &.active {
+        color: white !important;
+    }
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}

@@ -1,0 +1,109 @@
+@use '../base/_variables.scss';
+@use '../utilities/extends.scss';
+
+/*GRID PARA VISUALIZADOR DE EQUIPOS*/
+#visualizador-equipos {
+    display: grid;
+    grid-template-columns: 250px auto;
+    margin: 5% 0% 5% 0%;
+    column-gap: 1%;
+}
+
+/* MENU LATERAL O FILTROS PARA EQUIPOS */
+.menu-lateral {
+    background-color: #ffffff;
+    border: 1px solid variables.$border-color;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+    p {
+        color: #5c2971;
+        font-size: 100%;
+        font-weight: bold;
+    }
+}
+/* FIN MENU LATERAL O FILTROS PARA EQUIPOS */
+
+/* GRILLA DE EQUIPOS */
+.grid-equipos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 2%;
+    row-gap: 2%;
+    justify-content: center;
+    
+}
+
+.grid-box {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    background-color: #ffffff;
+    border: 1px solid variables.$border-color;
+    border-radius: 15px;
+    padding: 10px;
+    img {
+        width: 70%;
+    }
+    p {
+        font-size: 100%;
+        color: #5c2971;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+/* FIN GRID GRILLA EQUIPOS */
+/*FIN GRID PARA EQUIPOS*/
+
+/*INICIO - GRID PARA VISUALIZADORES DE PLANES Y SERVICIOS */
+.visualizador-content {
+    @extend .visualizador-content;
+}
+
+/*ESTILOS PARA BOX DE PLANES Y SERVICIOS */
+.content-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    align-items: start;
+    background-color: #381451;
+    border: 2px solid rgb(221, 110, 246);
+    border-radius: 12px;
+}
+
+.content-titulo {
+    padding: 10px 0px 0px 20px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    max-height: 100%;
+}
+
+.content-price {
+    padding-left: 20px;
+    background-color: #e7a0f9;
+    p {
+        color: #000000;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 5px 0;
+    }
+}
+
+.content-box-separador {
+    padding: 10px 0px 0px 20px;
+    background-color: #df4cbf;
+    p {
+        color: #ffffff;
+        font-weight: bold;
+    }
+}
+
+.content-box-info {
+    margin: 20px;
+    p {
+        color: #fff;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,13 @@
+.visualizador-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1%;
+    row-gap: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+%flex-container {
+    display: flex;
+    gap: 10px;
+}

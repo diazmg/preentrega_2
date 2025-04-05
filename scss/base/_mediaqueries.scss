@@ -1,0 +1,89 @@
+/* MEDIA QUERIES */
+/* Celulares */
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .img-contacto {
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar .container-fluid {
+        padding: 0 10px;
+    }
+
+    .navbar-brand img {
+        width: 100px;
+    }
+
+    .grid-equipos {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+
+    .visualizador-content {
+        display: flex !important;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .content-box {
+        width: 100%;
+    }
+
+    .content-titulo .content-price .content-box-info {
+        font-size: 50%;
+    }
+
+    .top-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* MEDIA QUERY */
+/* Tablets */
+@media (min-width: 577px) and (max-width: 992px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content-box {
+        width: 100%;
+    }
+
+    .grid-equipos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .visualizador-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* MEDIA QUERY */
+/* Escritorio */
+@media (min-width: 993px) {
+    .grid-equipos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .visualizador-content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

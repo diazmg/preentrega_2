@@ -1,0 +1,15 @@
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1 !important;
+    max-width: 1200px;
+    margin: 20px auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    p {
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        color: #a3a3a3;
+    }
+}

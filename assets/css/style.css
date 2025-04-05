@@ -1,442 +1,389 @@
+.visualizador-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 1%;
+       column-gap: 1%;
+  row-gap: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#shortcuts div, .contacto, #formulario-contacto {
+  display: flex;
+  gap: 10px;
+}
+
 /* CSS Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* CSS Reset End */
-/* MEDIA QUERIES */
-/* Celulares */
-@media (max-width: 576px) {
-    body {
-        font-size: 14px;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .contacto {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .img-contacto {
-        width: 100%;
-        height: auto;
-    }
-
-    .navbar .container-fluid {
-        padding: 0 10px;
-    }
-
-    .navbar-brand img {
-        width: 100px;
-    }
-
-    .grid-equipos {
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 10px;
-    }
-
-    .visualizador-content {
-        display: flex !important;
-        flex-direction: column;
-        row-gap: 10px;
-    }
-
-    .content-box {
-        width: 100%;
-    }
-
-    .content-titulo .content-price .content-box-info {
-        font-size: 50%;
-    }
-
-    .top-footer {
-        flex-direction: column;
-        text-align: center;
-    }
+/* CSS Reset END */
+html {
+  height: 100%;
 }
 
-/* MEDIA QUERY */
-/* Tablets */
-@media (min-width: 577px) and (max-width: 992px) {
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .content-box {
-        width: 100%;
-    }
-
-    .grid-equipos {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .visualizador-content {
-        grid-template-columns: 1fr;
-    }
+/* h1 General Style */
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  color: #5c2971;
+  text-align: left;
 }
 
-/* MEDIA QUERY */
-/* Escritorio */
-@media (min-width: 993px) {
-    .grid-equipos {
-        grid-template-columns: repeat(3, 1fr);
-    }
+/* BODY STYLES */
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  background-color: #F2F2F2;
+}
 
-    .visualizador-content {
-        grid-template-columns: repeat(2, 1fr);
-    }
+/*INICIO ESTILOS ESPECIALES*/
+#banner-servicios {
+  width: 70%;
+}
+
+/* ESTILOS SHORTCUTS INDEX */
+#shortcuts {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: stretch;
+  justify-content: space-between;
+}
+#shortcuts div {
+  padding: 10px 2px 2px 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e7a0f9;
+  border-radius: 5px;
+}
+#shortcuts p {
+  color: #4d355f;
+  font-size: 15px;
+}
+
+/* FIN ESTILOS SHORTCUTS INDEX */
+/*FORMULARIO DE CONTACTO FONDO & TEXTO*/
+#formulario-contacto {
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #680b97;
+  padding: 2%;
+  margin-bottom: 2%;
+  background-color: #fdf8fe;
+  border: 1px solid #ea96ff;
+  border-radius: 5px;
+}
+#formulario-contacto p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #681e85;
+  font-weight: bold;
+}
+
+/* BOTON ESPECIFICO WEB CONTACTO */
+.btn-custom {
+  background-color: #6a0dad;
+  color: white;
+  border: 1px solid #da1aba;
+  border-radius: 2px;
+}
+.btn-custom:hover {
+  background-color: #580a9e;
+}
+
+/* BOTON ESPECIFICO WEB CONTACTO */
+.titulo2 {
+  margin-top: 10px;
+}
+.titulo2 p {
+  color: #8724a5;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.img-contacto {
+  max-width: 100%;
+  height: 50%;
 }
 
 /* ESTILOS HEADER*/
 /*TOP-HEADER*/
 .top-header {
-    display: flex;
-    height: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #ededed;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #ededed;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-header p {
+  font-family: "Roboto", sans-serif;
+  color: #7e7e7e;
+  font-size: 20px;
 }
 
 /*LOGO Y NAVBAR TOP*/
 .logo-img {
-    width: 150px;
-    height: auto;
-    max-width: 100%;
+  width: 150px;
+  height: auto;
+  max-width: 100%;
 }
 
 .bottom-header {
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #381451;
-    align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: linear-gradient(65deg, #260e36, #5a2184 25%, #8130bb 80%);
+  /*background-color: #381451;*/
+  align-items: center;
 }
 
 .navbar-nav .nav-link {
-    color: white !important;
-    text-align: center;
+  color: white !important;
+  text-align: center;
 }
-
 .navbar-nav .nav-link.active {
-    color: white !important;
+  color: white !important;
 }
 
 .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .navbar-toggler-icon {
-    filter: invert(1);
+  filter: invert(1);
 }
 
-/* Estilos Body */
-body {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    height: 100%;
-    background-color: #F2F2F2;
-}
-
-/* INICIO selector para H1 en todas las webs */
-h1 {
-    font-size: 36px;
-    color: #5c2971;
-    font-family: "Roboto", sans-serif;
-    text-align: left;
-}
-
-/* FIN selector para etiqueta H1 en todas las webs */
-
-/* ESTILOS CAROUSEL INDEX */
-.carousel-item img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    margin-top: 10px;
-}
-
-/* INICIO selector para PÁRRAFOS */
-.top-header p {
-    font-family: "Roboto", sans-serif;
-    color: #7e7e7e;
-    font-size: 20px;
-}
-
-/*INICIO ESTILOS MAIN*/
-/*PÁRRAFOS dentro del MAIN*/
 main {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1 !important;
-    max-width: 1200px;
-    margin: 20px auto;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1 !important;
+  max-width: 1200px;
+  margin: 20px auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-
 main p {
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    color: #a3a3a3;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #a3a3a3;
 }
 
-/*FIN Selector para PÁRRAFOS dentro del MAIN*/
+/*INICIO FOOTER*/
+footer {
+  background-image: linear-gradient(45deg, #23132e, #592a7e 50%, #4b2864 80%);
+  padding: 10px 20px 10px 20px;
+}
+
+footer p {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.top-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*FIN ESTILOS FOOTER*/
+/*Color de bordes de box grid de equipos */
 /*GRID PARA VISUALIZADOR DE EQUIPOS*/
 #visualizador-equipos {
-    display: grid;
-    grid-template-columns: 250px auto;
-    margin: 5% 0% 5% 0%;
-    column-gap: 1%;
+  display: grid;
+  grid-template-columns: 250px auto;
+  margin: 5% 0% 5% 0%;
+  -moz-column-gap: 1%;
+       column-gap: 1%;
 }
 
 /* MENU LATERAL O FILTROS PARA EQUIPOS */
 .menu-lateral {
-    background-color: #ffffff;
-    border: 1px solid #e7a0f9;
-    border-radius: 15px;
-    align-items: center;
-    text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #e7a0f9;
+  border-radius: 15px;
+  align-items: center;
+  text-align: center;
 }
-
 .menu-lateral p {
-    color: #5c2971;
-    font-size: 100%;
-    font-weight: bold;
+  color: #5c2971;
+  font-size: 100%;
+  font-weight: bold;
 }
 
 /* FIN MENU LATERAL O FILTROS PARA EQUIPOS */
 /* GRILLA DE EQUIPOS */
 .grid-equipos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
-    column-gap: 2%;
-    row-gap: 2%;
-    justify-content: center;
-    
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
+  row-gap: 2%;
+  justify-content: center;
 }
 
 .grid-box {
-    display: grid;
-    place-items: center;
-    background-color: #ffffff;
-    border: 1px solid #e7a0f9;
-    border-radius: 15px;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  background-color: #ffffff;
+  border: 1px solid #e7a0f9;
+  border-radius: 15px;
+  padding: 10px;
 }
-
 .grid-box img {
-    width: 50%;
+  width: 70%;
 }
-
 .grid-box p {
-    font-size: 100%;
-    color: #5c2971;
-    font-weight: bold;
-    text-align: center;
+  font-size: 100%;
+  color: #5c2971;
+  font-weight: bold;
+  text-align: center;
 }
-
 
 /* FIN GRID GRILLA EQUIPOS */
-
-/*USO DE GRID PARA VISUALIZADORES DE PLANES Y SERVICIOS */
-.visualizador-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 1%;
-    margin-top: 1%;
-    margin-bottom: 15px;
-}
-
+/*FIN GRID PARA EQUIPOS*/
+/*INICIO - GRID PARA VISUALIZADORES DE PLANES Y SERVICIOS */
 /*ESTILOS PARA BOX DE PLANES Y SERVICIOS */
 .content-box {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: min-content;
-    align-items: start;
-    background-color: #381451;
-    border: 2px solid rgb(221, 110, 246);
-    border-radius: 12px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: min-content;
+  align-items: start;
+  background-color: #381451;
+  border: 2px solid rgb(221, 110, 246);
+  border-radius: 12px;
 }
 
 .content-titulo {
-    padding: 10px 0px 0px 20px;
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    max-height: 100%;
+  padding: 10px 0px 0px 20px;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  max-height: 100%;
 }
 
 .content-price {
-    padding-left: 20px;
-    background-color: #e7a0f9;
+  padding-left: 20px;
+  background-color: #e7a0f9;
 }
-
 .content-price p {
-    color: #000000;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 5px 0;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0;
 }
 
 .content-box-separador {
-    padding: 10px 0px 0px 20px;
-    background-color: #df4cbf;
+  padding: 10px 0px 0px 20px;
+  background-color: #df4cbf;
 }
-
 .content-box-separador p {
-    color: #ffffff;
-    font-weight: bold;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .content-box-info {
-    margin: 20px;
+  margin: 20px;
 }
-
 .content-box-info p {
-    color: #fff;
-    font-size: 16px;
+  color: #fff;
+  font-size: 16px;
 }
 
-
-/*ESTILOS PARA CONTENEDORES DE EQUIPOS*/
-.servicios-celulares {
-    background-color: #5c2971;
-    padding: 5px;
-    color: #ffffff;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 18px;
+/* ESTILOS CAROUSEL INDEX */
+.carousel-item img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 10px;
 }
 
-.servicios-casa {
-    background-color: #5c2971;
-    padding: 5px;
-    color: #ffffff;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* ESTILOS SHORTCUTS INDEX */
-#shortcuts {
-    margin: 20px 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 20px;
-    align-items: stretch;
-    justify-content: space-between;
-}
-
-#shortcuts div {
-    padding: 10px 2px 2px 2px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 1px solid #e7a0f9;
-    border-radius: 5px;
-}
-
-#shortcuts p {
-    color: #4d355f;
-    font-size: 15px;
-}
-
-/* FIN ESTILOS SHORTCUTS INDEX */
-/* FIN ESTILOS MAIN*/
-
-/*INICIO FOOTER*/
-footer {
-    background-color: #381451;
-    padding: 10px 20px 10px 20px;
-}
-
-footer p {
-    font-size: 20px;
-    font-family: "Nunito", sans-serif;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-.top-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-/*FIN ESTILOS FOOTER*/
-
-/*INICIO ESTILOS ESPECIALES*/
-#banner-servicios {
-    width: 70%;
-}
-
-/*FORMULARIO DE CONTACTO FONDO & TEXTO*/
-.contacto {
-    display: flex;
-    gap: 10px;
-}
-
-#formulario-contacto {
+/* MEDIA QUERIES */
+/* Celulares */
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .contacto {
     display: flex;
     flex-direction: column;
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    color: #680b97;
-    padding: 2%;
-    margin-bottom: 2%;
-    background-color: #fdf8fe;
-    /*Fondo del menú*/
-    border: 1px solid #ea96ff;
-    border-radius: 5px;
-
-    /*Borde gris*/
+    flex-wrap: wrap;
+  }
+  .img-contacto {
+    width: 100%;
+    height: auto;
+  }
+  .navbar .container-fluid {
+    padding: 0 10px;
+  }
+  .navbar-brand img {
+    width: 100px;
+  }
+  .grid-equipos {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+  .visualizador-content {
+    display: flex !important;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .content-box {
+    width: 100%;
+  }
+  .content-titulo .content-price .content-box-info {
+    font-size: 50%;
+  }
+  .top-footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
-
-#formulario-contacto p {
-    font-size: 20px;
-    font-weight: bold;
-    color: #681e85;
-}
-
-/* BOTON ESPECIFICO WEB CONTACTO */
-.btn-custom {
-    background-color: #6a0dad;
-    color: white;
-    border: 1px solid #da1aba;
-    border-radius: 2px;
-
-}
-
-.btn-custom:hover {
-    background-color: #580a9e;
-}
-
-/* BOTON ESPECIFICO WEB CONTACTO */
-
-.titulo2 {
-    margin-top: 10px;
-}
-
-.titulo2 p {
-    color: #8724a5;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.img-contacto {
+/* MEDIA QUERY */
+/* Tablets */
+@media (min-width: 577px) and (max-width: 992px) {
+  img {
     max-width: 100%;
-    height: 50%;
+    height: auto;
+  }
+  .content-box {
+    width: 100%;
+  }
+  .grid-equipos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .visualizador-content {
+    grid-template-columns: 1fr;
+  }
 }
+/* MEDIA QUERY */
+/* Escritorio */
+@media (min-width: 993px) {
+  .grid-equipos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .visualizador-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}/*# sourceMappingURL=style.css.map */
