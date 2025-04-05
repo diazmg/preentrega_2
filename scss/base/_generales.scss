@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 /* CSS Reset END */
-html {
+html, body {
     height: 100%;
 }
 /* h1 General Style */
@@ -97,4 +97,5 @@ body {
 .img-contacto {
     max-width: 100%;
     height: 50%;
+    display: block;
 }

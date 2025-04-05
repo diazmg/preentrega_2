@@ -8,6 +8,7 @@
     img {
         max-width: 100%;
         height: auto;
+        display: block
     }
 
     .contacto {
@@ -61,6 +62,7 @@
     img {
         max-width: 100%;
         height: auto;
+        display: block;
     }
 
     .content-box {
@@ -79,6 +81,11 @@
 /* MEDIA QUERY */
 /* Escritorio */
 @media (min-width: 993px) {
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
     .grid-equipos {
         grid-template-columns: repeat(3, 1fr);
     }
