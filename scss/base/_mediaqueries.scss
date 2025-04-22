@@ -11,15 +11,28 @@
         display: block
     }
 
-    .contacto {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+    .carousel-item img {
+        height: 300px;
     }
 
-    .img-contacto {
-        width: 100%;
-        height: auto;
+    .shortcuts {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        scroll-snap-type: x mandatory;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 15px;
+        padding: 10px;
+        -webkit-overflow-scrolling: touch;
+
+        .shortcuts-kit {
+            display: inline-block;
+            flex: 0 0 auto;
+            width: 130px;
+            margin-right: 130px;
+            scroll-snap-align: start;
+        }
     }
 
     .navbar .container-fluid {
@@ -37,8 +50,7 @@
     }
 
     .visualizador-content {
-        display: flex !important;
-        flex-direction: column;
+        grid-template-columns: 1fr;
         row-gap: 10px;
     }
 
@@ -54,43 +66,58 @@
         flex-direction: column;
         text-align: center;
     }
-}
 
-/* MEDIA QUERY */
-/* Tablets */
-@media (min-width: 577px) and (max-width: 992px) {
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
+    .telephonesCards_cards-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .map-tiendas {
+            aspect-ratio: 1 / 1;
+            max-width: 90%;
+            height: 300px;
+        }
     }
+    /* MEDIA QUERY */
+    /* Tablets */
+    @media (min-width: 577px) and (max-width: 992px) {
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
 
-    .content-box {
-        width: 100%;
-    }
+        .content-box {
+            width: 100%;
+        }
 
-    .grid-equipos {
-        grid-template-columns: repeat(2, 1fr);
-    }
+        .grid-equipos {
+            grid-template-columns: repeat(2, 1fr);
+        }
 
-    .visualizador-content {
-        grid-template-columns: 1fr;
-    }
-}
+        .visualizador-content {
+            grid-template-columns: 1fr;
+        }
 
-/* MEDIA QUERY */
-/* Escritorio */
-@media (min-width: 993px) {
-    img {
-        max-width: 100%;
-        display: block;
-    }
+        .contact {
+            max-width: 100%;
+        }
 
-    .grid-equipos {
-        grid-template-columns: repeat(3, 1fr);
-    }
+        /* MEDIA QUERY */
+        /* Escritorio */
+        @media (min-width: 993px) {
+            img {
+                max-width: 100%;
+                display: block;
+            }
 
-    .visualizador-content {
-        grid-template-columns: repeat(4, 1fr);
+            .grid-equipos {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .visualizador-content {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
     }
 }

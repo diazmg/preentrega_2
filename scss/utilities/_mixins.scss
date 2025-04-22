@@ -1,13 +1,7 @@
-@mixin flex-center($direction) {
+@mixin flex-center {
     display: flex;
-    flex-direction: $direction;
-    align-items: center;
     justify-content: center;
-}
-
-@mixin box-style($border-color) {
-    border: 1px solid $border-color;
-    border-radius: 5px;
+    align-items: center;
 }
 
 @mixin font-style($size, $color) {

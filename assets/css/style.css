@@ -1,4 +1,6 @@
+@charset "UTF-8";
 .visualizador-content {
+  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   -moz-column-gap: 1%;
@@ -6,11 +8,79 @@
   row-gap: 2%;
   margin-top: 1%;
   margin-bottom: 1%;
+  justify-content: center;
 }
 
-#shortcuts div, .contacto, #formulario-contacto {
+.titulo-base, h1, h2, .h2-v2 {
+  font-family: "Roboto", sans-serif;
+  color: #75378e;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.btn-base, .btn, .btn-custom {
+  display: inline-block;
+  margin: auto;
+  color: white;
+  border-radius: 17px;
+}
+
+.main-container, .container-planes-moviles,
+.container-planes-hogar,
+.contacto-telefonos .contacto-telefonos {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.grid-item-eqp-base, .grid-filtros,
+.grid-eqp-01,
+.grid-eqp-02,
+.grid-eqp-03,
+.grid-eqp-04,
+.grid-eqp-05,
+.grid-eqp-06,
+.grid-eqp-07,
+.grid-eqp-08,
+.grid-eqp-09 {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #e7a0f9;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+.grid-item-eqp-base img, .grid-filtros img,
+.grid-eqp-01 img,
+.grid-eqp-02 img,
+.grid-eqp-03 img,
+.grid-eqp-04 img,
+.grid-eqp-05 img,
+.grid-eqp-06 img,
+.grid-eqp-07 img,
+.grid-eqp-08 img,
+.grid-eqp-09 img {
+  width: 150px;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.grid-item-eqp-base p, .grid-filtros p,
+.grid-eqp-01 p,
+.grid-eqp-02 p,
+.grid-eqp-03 p,
+.grid-eqp-04 p,
+.grid-eqp-05 p,
+.grid-eqp-06 p,
+.grid-eqp-07 p,
+.grid-eqp-08 p,
+.grid-eqp-09 p {
+  font-size: 100%;
+  color: #5c2971;
+  font-weight: bold;
+  text-align: center;
 }
 
 /* CSS Reset */
@@ -21,16 +91,26 @@
 }
 
 /* CSS Reset END */
-html, body {
+html,
+body {
   height: 100%;
+  width: 100vw;
 }
 
 /* h1 General Style */
 h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 36px;
-  color: #5c2971;
-  text-align: left;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+h2, .h2-v2 {
+  font-size: 1.25rem;
+  color: #6c2a86;
+}
+
+.h2-v2 {
+  font-size: 20px;
+  color: #858585;
 }
 
 /* BODY STYLES */
@@ -39,83 +119,320 @@ body {
   flex-direction: column;
   flex: 1;
   height: 100%;
-  background-color: #F2F2F2;
+  background-color: #ffffff;
+}
+
+main img {
+  display: block;
+  width: 100vw;
 }
 
 /*INICIO ESTILOS ESPECIALES*/
-#banner-servicios {
-  width: 70%;
+.banner-servicios {
+  width: 100vw;
 }
 
 /* ESTILOS SHORTCUTS INDEX */
-#shortcuts {
-  margin: 20px 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  align-items: stretch;
-  justify-content: space-between;
+.shortcuts-bg {
+  width: 100%;
+  max-width: 100%;
+  background-color: #ecd4f7;
+  /*#fbf0fd*/
+  /*#480060*/
+  padding: 25px 0;
+  border-top: 3px solid #f7a3ff;
+  border-bottom: 1px solid #f7a3ff;
 }
-#shortcuts div {
-  padding: 10px 2px 2px 2px;
+
+.shortcuts {
+  margin: 0 auto;
+  max-width: 1200vw;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3%;
+}
+
+.shortcut-kit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  gap: 5px;
+}
+
+.shortcut-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  flex-shrink: 0;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.shortcut-icon i {
+  color: #6a0dad;
+}
+
+.shortcut-text {
+  padding-top: 10px;
+  align-items: center;
+  text-align: center;
+}
+.shortcut-text p {
+  color: #30084f;
+  font-size: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*ESTILOS CARDS PLANES INDEX.HTML */
+.card-body {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  align-self: stretch;
+}
+.card-body .card-title {
+  font-size: 25px;
+}
+
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid #e7a0f9;
-  border-radius: 5px;
-}
-#shortcuts p {
-  color: #4d355f;
-  font-size: 15px;
+  height: 100%;
+  border: 1px solid #f7a3ff;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
 }
 
-/* FIN ESTILOS SHORTCUTS INDEX */
-/*FORMULARIO DE CONTACTO FONDO & TEXTO*/
-#formulario-contacto {
-  flex-direction: column;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  color: #680b97;
-  padding: 2%;
-  margin-bottom: 2%;
-  background-color: #fdf8fe;
-  border: 1px solid #ea96ff;
+.price-text {
+  font-size: 50px;
+  /*font-weight: bold;*/
+  color: #681e85;
+  text-align: center;
+}
+
+.bonus-text {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4px 16px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  background-color: #c649f8;
   border-radius: 5px;
 }
-#formulario-contacto p {
-  font-family: "Roboto", sans-serif;
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  height: 100%;
+}
+.card-details p {
   font-size: 20px;
-  color: #681e85;
+  color: #9273a9;
+  /*#3f2454*/
+  text-align: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.card-title {
+  font-size: 20px;
   font-weight: bold;
+  color: #681e85;
+}
+
+.btn {
+  background-color: #6a0dad;
+  border: 1px solid #da1aba;
+}
+.btn:hover {
+  background-color: #d835eb;
+}
+
+/* CARDS DE TELEFONOS DE CONTACTO */
+.contacto-telefonos .telephonesCards_cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  margin: 32px 0;
+  align-items: stretch;
+}
+.contacto-telefonos .telephonesCards_cards-container .telephonesCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #f7a3ff;
+  border-radius: 16px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.contacto-telefonos .telephonesCards_cards-container .telephonesCard .telephonesCard__header {
+  display: flex;
+  padding: 12px 16px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  align-self: stretch;
+  background-color: #580a9e;
+}
+.contacto-telefonos .telephonesCards_cards-container .telephonesCard .telephonesCard__header i {
+  color: white;
+}
+.contacto-telefonos .telephonesCards_cards-container .telephonesCard .telephonesCard__header .telephonesCard__header__title {
+  color: white;
+}
+.contacto-telefonos .telephonesCards_cards-container .telephonesCard .telephonesCard__content {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 16px;
+  align-items: left;
+  flex: 1 0;
+  align-self: stretch;
+}
+.contacto-telefonos .telephonesCards_cards-container .telephonesCard .telephonesCard__content .telephone-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #dbdae3;
+}
+.contacto-telefonos .telephonesCards_cards-container .telephonesCard .telephonesCard__content .telephone-group .telephone-group-title .title {
+  color: rgb(81, 9, 122);
+  font-size: 18px;
+  font-weight: bold;
+}
+.contacto-telefonos .telephonesCards_cards-container .telephonesCard .telephonesCard__content .telephone-group .telephone-group-title .telephone-number a {
+  text-decoration: none;
+}
+.contacto-telefonos .telephonesCards_cards-container .telephonesCard .telephonesCard__content .telephone-group .telephone-group-title .telephone-number .number {
+  color: #c649f8;
+  font-size: 16px;
+}
+.contacto-telefonos .telephonesCards_cards-container .telephonesCard .telephonesCard__content .telephone-group .telephone-group-title .telephone-number .description {
+  color: #a49aa7;
+  font-size: 16px;
+}
+
+/*SECCIÓN RRSS DE CONTACTO**/
+.rrss-bg {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  background-color: #fef7ff;
+  border-top: 1px solid #f7a3ff;
+  border-bottom: 1px solid #f7a3ff;
+}
+.rrss-bg .rrss {
+  margin: 15px auto;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3%;
+}
+.rrss-bg .rrss .rrsscard-kit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  gap: 5px;
+}
+.rrss-bg .rrss .rrsscard-kit .rrss-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  background-color: #6a0dad;
+  border-radius: 50%;
+  text-align: center;
+  flex-shrink: 0;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.rrss-bg .rrss .rrsscard-kit .rrss-icon i {
+  color: white;
+}
+.rrss-bg .rrss .rrsscard-kit .rrss-text {
+  padding-top: 10px;
+  align-items: center;
+  text-align: center;
+}
+.rrss-bg .rrss .rrsscard-kit .rrss-text p {
+  color: #30084f;
+  font-size: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*SECCION TIENDAS DE CONTACTO*/
+.tiendas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding-bottom: 25px;
+}
+.tiendas .map-tiendas {
+  width: 100%;
+  max-width: 100%;
+  height: 450px;
+  border-radius: 10px;
+}
+
+/*FORMULARIO DE CONTACTO FONDO & TEXTO*/
+.contact {
+  max-width: 100%;
+  width: 100%;
+  background-color: #fef7ff;
+  padding-bottom: 25px;
+}
+.contact .contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contact .contact-form .contact-form-subtitle {
+  text-align: center;
+}
+.contact .contact-form .col-12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* BOTON ESPECIFICO WEB CONTACTO */
 .btn-custom {
   background-color: #6a0dad;
-  color: white;
   border: 1px solid #da1aba;
   border-radius: 2px;
 }
 .btn-custom:hover {
   background-color: #580a9e;
-}
-
-/* BOTON ESPECIFICO WEB CONTACTO */
-.titulo2 {
-  margin-top: 10px;
-}
-.titulo2 p {
-  color: #8724a5;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.img-contacto {
-  max-width: 100%;
-  height: 50%;
-  display: block;
 }
 
 /* ESTILOS HEADER*/
@@ -128,6 +445,8 @@ body {
   background-color: #ededed;
   justify-content: space-between;
   align-items: center;
+  max-width: 100%;
+  width: 100%;
 }
 .top-header p {
   font-family: "Roboto", sans-serif;
@@ -148,6 +467,7 @@ body {
   background-image: linear-gradient(65deg, #260e36, #5a2184 25%, #8130bb 80%);
   /*background-color: #381451;*/
   align-items: center;
+  border-bottom: 1px solid #f7a3ff;
 }
 
 .navbar-nav .nav-link {
@@ -170,16 +490,16 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  max-width: 1200px;
-  margin: 20px auto;
+  margin: 0px auto;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  max-width: 100vw;
+  margin-bottom: 40px;
 }
 main p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
-  color: #a3a3a3;
+  color: #92749e;
 }
 
 /*INICIO FOOTER*/
@@ -202,68 +522,31 @@ footer p {
 
 /*FIN ESTILOS FOOTER*/
 /*Color de bordes de box grid de equipos */
-/*GRID PARA VISUALIZADOR DE EQUIPOS*/
-#visualizador-equipos {
-  display: grid;
-  grid-template-columns: 250px auto;
-  margin: 1% 0% 5% 0%;
-  -moz-column-gap: 1%;
-       column-gap: 1%;
-}
-
-/* MENU LATERAL O FILTROS PARA EQUIPOS */
-.menu-lateral {
-  background-color: #ffffff;
-  border: 1px solid #e7a0f9;
-  border-radius: 15px;
-  align-items: center;
-  text-align: center;
-}
-.menu-lateral p {
-  color: #5c2971;
-  font-size: 100%;
-  font-weight: bold;
-}
-
-/* FIN MENU LATERAL O FILTROS PARA EQUIPOS */
 /* GRILLA DE EQUIPOS */
 .grid-equipos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "grid-filtros grid-eqp-01 grid-eqp-02 grid-eqp-03" "grid-filtros grid-eqp-04 grid-eqp-05 grid-eqp-06" "grid-filtros grid-eqp-07 grid-eqp-08 grid-eqp-09";
   -moz-column-gap: 2%;
        column-gap: 2%;
   row-gap: 2%;
   justify-content: center;
+  margin-top: 20px;
 }
 
-.grid-box {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  place-items: center;
-  background-color: #ffffff;
-  border: 1px solid #e7a0f9;
-  border-radius: 15px;
-  padding: 10px;
-}
-.grid-box img {
-  width: 70%;
-}
-.grid-box p {
-  font-size: 100%;
-  color: #5c2971;
-  font-weight: bold;
-  text-align: center;
+.grid-filtros {
+  grid-row: 1/4;
 }
 
 /* FIN GRID GRILLA EQUIPOS */
 /*FIN GRID PARA EQUIPOS*/
 /*INICIO - GRID PARA VISUALIZADORES DE PLANES Y SERVICIOS */
-/*ESTILOS PARA BOX DE PLANES Y SERVICIOS */
+/*ESTILOS PARA BOX DE PLANES Y SERVICIOS en PLANES.HTML*/
 .content-box {
   display: grid;
-  grid-template-columns: 1fr;
   grid-auto-rows: min-content;
   align-items: start;
   background-color: #381451;
@@ -313,7 +596,6 @@ footer p {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-top: 10px;
 }
 
 /* MEDIA QUERIES */
@@ -327,14 +609,26 @@ footer p {
     height: auto;
     display: block;
   }
-  .contacto {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  .carousel-item img {
+    height: 300px;
   }
-  .img-contacto {
-    width: 100%;
-    height: auto;
+  .shortcuts {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .shortcuts .shortcuts-kit {
+    display: inline-block;
+    flex: 0 0 auto;
+    width: 130px;
+    margin-right: 130px;
+    scroll-snap-align: start;
   }
   .navbar .container-fluid {
     padding: 0 10px;
@@ -348,8 +642,7 @@ footer p {
     row-gap: 10px;
   }
   .visualizador-content {
-    display: flex !important;
-    flex-direction: column;
+    grid-template-columns: 1fr;
     row-gap: 10px;
   }
   .content-box {
@@ -362,10 +655,20 @@ footer p {
     flex-direction: column;
     text-align: center;
   }
+  .telephonesCards_cards-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .telephonesCards_cards-container .map-tiendas {
+    aspect-ratio: 1/1;
+    max-width: 90%;
+    height: 300px;
+  }
+  /* MEDIA QUERY */
+  /* Tablets */
 }
-/* MEDIA QUERY */
-/* Tablets */
-@media (min-width: 577px) and (max-width: 992px) {
+@media (max-width: 576px) and (min-width: 577px) and (max-width: 992px) {
   img {
     max-width: 100%;
     height: auto;
@@ -380,10 +683,13 @@ footer p {
   .visualizador-content {
     grid-template-columns: 1fr;
   }
+  .contact {
+    max-width: 100%;
+  }
+  /* MEDIA QUERY */
+  /* Escritorio */
 }
-/* MEDIA QUERY */
-/* Escritorio */
-@media (min-width: 993px) {
+@media (max-width: 576px) and (min-width: 577px) and (max-width: 992px) and (min-width: 993px) {
   img {
     max-width: 100%;
     display: block;

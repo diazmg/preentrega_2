@@ -1,58 +1,38 @@
 @use '../base/_variables.scss';
 @use '../utilities/extends.scss';
 
-/*GRID PARA VISUALIZADOR DE EQUIPOS*/
-#visualizador-equipos {
-    display: grid;
-    grid-template-columns: 250px auto;
-    margin: 1% 0% 5% 0%;
-    column-gap: 1%;
-}
-
-/* MENU LATERAL O FILTROS PARA EQUIPOS */
-.menu-lateral {
-    background-color: #ffffff;
-    border: 1px solid variables.$border-color;
-    border-radius: 15px;
-    align-items: center;
-    text-align: center;
-    p {
-        color: #5c2971;
-        font-size: 100%;
-        font-weight: bold;
-    }
-}
-/* FIN MENU LATERAL O FILTROS PARA EQUIPOS */
-
 /* GRILLA DE EQUIPOS */
 .grid-equipos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "grid-filtros grid-eqp-01 grid-eqp-02 grid-eqp-03"
+    "grid-filtros grid-eqp-04 grid-eqp-05 grid-eqp-06"
+    "grid-filtros grid-eqp-07 grid-eqp-08 grid-eqp-09";
     column-gap: 2%;
     row-gap: 2%;
     justify-content: center;
+    margin-top: 20px;
     
 }
 
-.grid-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    place-items: center;
-    background-color: #ffffff;
-    border: 1px solid variables.$border-color;
-    border-radius: 15px;
-    padding: 10px;
-    img {
-        width: 70%;
-    }
-    p {
-        font-size: 100%;
-        color: #5c2971;
-        font-weight: bold;
-        text-align: center;
-    }
+.grid-filtros {
+    grid-row: 1 / 4;
+}
+.grid-filtros,
+.grid-eqp-01,
+.grid-eqp-02,
+.grid-eqp-03,
+.grid-eqp-04,
+.grid-eqp-05,
+.grid-eqp-06,
+.grid-eqp-07,
+.grid-eqp-08,
+.grid-eqp-09 {
+    @extend .grid-item-eqp-base;
 }
 /* FIN GRID GRILLA EQUIPOS */
 /*FIN GRID PARA EQUIPOS*/
@@ -62,10 +42,9 @@
     @extend .visualizador-content;
 }
 
-/*ESTILOS PARA BOX DE PLANES Y SERVICIOS */
+/*ESTILOS PARA BOX DE PLANES Y SERVICIOS en PLANES.HTML*/
 .content-box {
     display: grid;
-    grid-template-columns: 1fr;
     grid-auto-rows: min-content;
     align-items: start;
     background-color: #381451;

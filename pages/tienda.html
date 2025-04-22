@@ -21,10 +21,25 @@
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <!--FONTS End-->
+    <!-- FAVICON ICON -->
+    <link rel="icon" type="image/x-icon" href="../assets/resources/iconos/favicon.ico">
     <!--CSS-->
     <link rel="stylesheet" href="../assets/css/style.css">
     <!-- CSS End-->
-    <title>Tienda Online - Celulares</title>
+    <title>Tienda Online - Celulares | FiberFirst</title>
+    <meta name="description"
+        content="Descubrí la mejor tienda de celulares online en FiberFirst Argentina. Encuontrá las últimas novedades, ofertas exclusivas y financiamiento en smartphones de las principales marcas. ¡Comprá hoy!">
+    <meta name="keywords"
+        content="tienda online celulares argentina, celulares en venta argentina, smartphones argentina, comprar celulares online, ofertas celulares, financiamiento celulares, Apple iPhone, Samsung Galaxy, Motorola, Xiaomi, ZTE, Nubia">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="FiberFirst: Tienda Online de Celulares en Argentina | Las Mejores Ofertas">
+    <meta property="og:description"
+        content="Descubrí la mejor tienda de celulares online en FiberFirst Argentina. Encontrá las últimas novedades, ofertas exclusivas y financiamiento en smartphones de las principales marcas. ¡Comprá hoy!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="../index.html">
+    <meta property="og:image" content="../assets/">
+</head>
+
 </head>
 
 <body>
@@ -41,8 +56,8 @@
         <div class="bottom-header">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand animate__bounceIn" href="../index.html"><img src="../assets/resources/logos/logowhite2.svg"
-                            alt="Logo" class="logo-img"></a>
+                    <a class="navbar-brand animate__bounceIn" href="../index.html"><img
+                            src="../assets/resources/logos/logowhite2.svg" alt="Logo" class="logo-img"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -73,63 +88,127 @@
         <!-- FIN TOP MENU Y NAVBAR -->
     </header>
     <main>
+        <!-- CAROUSEL PARA EQUIPOS CON TIEMPO - INTERVALO INDIVIDUAL -->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="../assets/resources/equipos/banner-equipos-promo-1900px.webp" class="d-block w-100"
+                        alt="iPhoneWeek - iPhone 14 en 6 cuotas sin interés">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="../assets/resources/equipos/banner-equipos-promo-motorola-1900px.webp"
+                        class="d-block w-100" alt="Llegó MotoSale con ofertas y 6 cuotas sin interés">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/resources/equipos/banner-equipos-promo-contrafactura900px.webp"
+                        class="d-block w-100" alt="Financiá tu equipo en contrafactura con tu plan">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="shortcuts-bg">
+            <div class="shortcuts">
+                <div class="shortcut-kit">
+                    <div class="shortcut-icon">
+                        <i class="bi bi-tags fs-1"></i>
+                    </div>
+                    <div class="shortcut-text">
+                        <p>Promociones</p>
+                    </div>
+                </div>
+                <div class="shortcut-kit">
+                    <div class="shortcut-icon">
+                        <i class="bi bi-truck fs-1"></i>
+                    </div>
+                    <div class="shortcut-text">
+                        <p>Formas de entrega</p>
+                    </div>
+                </div>
+                <div class="shortcut-kit">
+                    <div class="shortcut-icon">
+                        <i class="bi bi-mailbox-flag fs-1"></i>
+                    </div>
+                    <div class="shortcut-text">
+                        <p>Seguimiento de pedidos</p>
+                    </div>
+                </div>
+                <div class="shortcut-kit">
+                    <div class="shortcut-icon">
+                        <i class="bi bi-credit-card-2-front fs-1"></i>
+                    </div>
+                    <div class="shortcut-text">
+                        <p>Medios de Pago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <h1>Tienda Online</h1>
-        <img src="../assets/resources/smartphones_1792x300.png" alt="Variedad de equipos para vos">
-        <div class="titulo2">
-            <p>La mayor variedad de equipos del mercado</p>
+        <h2 class="h2-v2">Equipos de las principales marcas y al mejor precio</h2>
         </div>
         <!--GRID VISUALIZADOR DE EQUIPOS-->
         <section id="visualizador-equipos">
             <!--FILTROS O MENU LATERAL -->
-            <div class="menu-lateral">
-                <p>Filtros:</p>
+            <!-- <div class="menu-lateral"> -->
+            <!-- <p>Filtros:</p> -->
             </div>
             <!-- GRILLA DE EQUIPOS -->
             <div class="grid-equipos">
-                <div class="grid-box">
+                <div class="grid-filtros">
+                    <p>Filtros:</p>
+                </div>
+                <div class="grid-eqp-01">
                     <p>Apple iPhone 14 128GB</p>
                     <p>$1.200.000</p>
                     <img src="../assets/resources/equipos/iphone-14-starlight.webp" alt="Apple iPhone 14">
                 </div>
-                <div class="grid-box">
+                <div class="grid-eqp-02">
                     <p>Samsung Galaxy S25 Ultra</p>
                     <p>$2.499.999</p>
                     <img src="../assets/resources/equipos/samsung-galaxy-s25-ultra-titaniumblack.webp"
                         alt="Samsung Galaxy S25 Ultra">
                 </div>
-                <div class="grid-box">
+                <div class="grid-eqp-03">
                     <p>Motorola Moto Razr 50 Ultra</p>
                     <p>$1.199.999</p>
                     <img src="../assets/resources/equipos/motorola-razr-50-ultra.webp"
                         alt="Motorola Moto Razr 50 Ultra">
                 </div>
-                <div class="grid-box">
+                <div class="grid-eqp-04">
                     <p>ZTE Blade A75 5G</p>
                     <p>$299.999</p>
                     <img src="../assets/resources/equipos/zte-blade-a75-5g.webp" alt="ZTE Blade A75 5G">
                 </div>
-                <div class="grid-box">
+                <div class="grid-eqp-05">
                     <p>Samsung Galaxy A15 128GB 4G</p>
                     <p>$299.999</p>
                     <img src="../assets/resources/equipos/samsung-a15-blueblack-front.png" alt="Samsung Galaxy A15">
                 </div>
-                <div class="grid-box">
+                <div class="grid-eqp-06">
                     <p>Samsung Galaxy A06 128GB 4G</p>
                     <p>$229.999</p>
                     <img src="../assets/resources/equipos/samsung-a06-black-front.png" alt="Samsung Galaxy A06">
                 </div>
-                <div class="grid-box">
+                <div class="grid-eqp-07">
                     <p>Motorola Moto Edge 50 5G</p>
                     <p>$699.999</p>
                     <img src="../assets/resources/equipos/moto-edge-50-5g-koalagray-front.png"
                         alt="Motorola Moto Edge 50">
                 </div>
-                <div class="grid-box">
+                <div class="grid-eqp-08">
                     <p>Xiaomi Redmi Note 13 4G</p>
                     <p>$499.999</p>
                     <img src="../assets/resources/equipos/xiaomi-redmi-note-13.webp" alt="Xiaomi Redmi Note 13">
                 </div>
-                <div class="grid-box">
+                <div class="grid-eqp-09">
                     <p>Nubia Neo 2 Gamer 5G 256 GB</p>
                     <p>$349.999</p>
                     <img src="../assets/resources/equipos/nubia-neo-2-gamer.webp" alt="Nubia Neo 2 Gamer 5G 256 GB">
