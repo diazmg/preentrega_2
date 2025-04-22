@@ -613,7 +613,7 @@ footer p {
     display: block;
   }
   .carousel-item img {
-    height: 300px;
+    height: 100%;
   }
   .shortcuts {
     display: flex;
