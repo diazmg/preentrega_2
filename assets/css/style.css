@@ -94,7 +94,7 @@
 html,
 body {
   height: 100%;
-  width: 1200px;
+  width: 100%;
 }
 
 /* h1 General Style */
@@ -124,12 +124,16 @@ body {
 
 main img {
   display: block;
+  max-width: 100%;
   width: 100%;
+  height: auto;
 }
 
-/*INICIO ESTILOS ESPECIALES*/
-.banner-servicios {
-  width: 1200px;
+.banner-fullwidth {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 /* ESTILOS SHORTCUTS INDEX */
@@ -146,7 +150,7 @@ main img {
 
 .shortcuts {
   margin: 0 auto;
-  max-width: 1200vw;
+  max-width: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -394,13 +398,13 @@ main img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  max-width: 100%;
   width: 100%;
   padding-bottom: 25px;
 }
 .tiendas .map-tiendas {
   width: 100%;
-  max-width: 100%;
+  max-width: 1200px;
   height: 450px;
   border-radius: 10px;
 }
@@ -490,10 +494,9 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  margin: 0px auto;
   justify-content: space-between;
   align-items: center;
-  max-width: 100vw;
+  max-width: 100%;
   margin-bottom: 40px;
 }
 main p {
