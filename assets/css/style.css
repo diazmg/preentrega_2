@@ -94,7 +94,7 @@
 html,
 body {
   height: 100%;
-  width: 100vw;
+  width: 1200px;
 }
 
 /* h1 General Style */
@@ -124,12 +124,12 @@ body {
 
 main img {
   display: block;
-  width: 100vw;
+  width: 100%;
 }
 
 /*INICIO ESTILOS ESPECIALES*/
 .banner-servicios {
-  width: 100vw;
+  width: 1200px;
 }
 
 /* ESTILOS SHORTCUTS INDEX */
